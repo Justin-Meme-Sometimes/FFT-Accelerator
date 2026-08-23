@@ -1,10 +1,15 @@
 module fp_add 
-#(paramter FRACTION_BITS = 8,
-  parameter WHOLE_BITS = 8
-)
-(input logic  signed [15:0] a,
- input logic  signed  [15:0] b,
- output logic signed [16:0] out_x);
+(input logic  signed [31:0] a,
+ input logic  signed  [31:0] b,
+ input logic  add_or_sub,
+ output logic signed [31:0] sum);
 
-    assign out_x = a + b;
- endmodule;
+    always_comb begin
+        sum = 0;
+        if(add_or_sub) begin
+            sum = a + b;
+        end else begin
+            sum = a - b;
+        end
+    end
+ endmodule

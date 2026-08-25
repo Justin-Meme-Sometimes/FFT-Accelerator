@@ -1,0 +1,42 @@
+[2026-08-24 06:47:52.470542] WARNING: file globals.py: line 168: Failed to find coverage installation. This can be installed with pip3 install coverage
+
+[2026-08-24 06:47:54.107069] |==============================================================================|
+[2026-08-24 06:47:54.107526] |=========                      OpenRAM v1.2.49                       =========|
+[2026-08-24 06:47:54.107564] |=========                                                            =========|
+[2026-08-24 06:47:54.107582] |=========               VLSI Design and Automation Lab               =========|
+[2026-08-24 06:47:54.107595] |=========        Computer Science and Engineering Department         =========|
+[2026-08-24 06:47:54.107606] |=========            University of California Santa Cruz             =========|
+[2026-08-24 06:47:54.107616] |=========                                                            =========|
+[2026-08-24 06:47:54.107627] |=========          Usage help: openram-user-group@ucsc.edu           =========|
+[2026-08-24 06:47:54.107637] |=========        Development help: openram-dev-group@ucsc.edu        =========|
+[2026-08-24 06:47:54.107646] |=========                See LICENSE for license info                =========|
+[2026-08-24 06:47:54.107655] |==============================================================================|
+[2026-08-24 06:47:54.107670] ** Start: 08/24/2026 06:47:54
+[2026-08-24 06:47:54.107688] Technology: sky130
+[2026-08-24 06:47:54.107700] Total size: 32768 bits
+[2026-08-24 06:47:54.107711] Word size: 32
+Words: 1024
+Banks: 1
+[2026-08-24 06:47:54.107722] Write size: 8
+[2026-08-24 06:47:54.107733] RW ports: 0
+R-only ports: 1
+W-only ports: 1
+[2026-08-24 06:47:54.107743] DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+[2026-08-24 06:47:54.107753] Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+[2026-08-24 06:47:54.107765] Only generating nominal corner timing.
+[2026-08-24 06:47:54.107776] Words per row: None
+[2026-08-24 06:47:54.107815] Output files are: 
+[2026-08-24 06:47:54.107829] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lvs
+[2026-08-24 06:47:54.107839] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.sp
+[2026-08-24 06:47:54.107851] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.v
+[2026-08-24 06:47:54.107860] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lib
+[2026-08-24 06:47:54.107870] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.py
+[2026-08-24 06:47:54.107879] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.html
+[2026-08-24 06:47:54.107887] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.log
+[2026-08-24 06:47:54.107896] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lef
+[2026-08-24 06:47:54.107904] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.gds
+[2026-08-24 06:50:27.114427] ** Submodules: 153.0 seconds
+[2026-08-24 06:50:27.131768] ** Placement: 0.0 seconds
+[2026-08-24 07:30:11.894439] ** Routing: 2384.8 seconds
+[2026-08-24 09:23:12.557346] WARNING: file magic.py: line 254: DRC Errors sky130_sram_4kbytes_1r1w_32x1024_8	3
+

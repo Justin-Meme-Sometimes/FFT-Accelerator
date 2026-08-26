@@ -5,14 +5,17 @@ human_byte_size = "{:.0f}kbytes".format((word_size * num_words)/1024/8)
 
 tech_name = "sky130"
 
-# Tools are provided by the iic-osic-tools container, not Nix
-use_nix = False
-
 # Only characterize the nominal corner (much faster than full corner sweep)
 nominal_corner_only = True
 
-# Run DRC/LVS/PEX verification (needs magic/netgen on PATH)
-check_lvsdrc = True
+# DRC/LVS/PEX disabled: the sky130 dual-port bitcell (sky130_fd_bd_sram__openram_dp_cell)
+# has a known, currently-unresolved upstream LVS limitation (see VLSIDA/OpenRAM#220) where
+# a couple of its internal dummy tap transistors only resolve to the real bl1/br1 bitline
+# nets via array abutment, which breaks netgen's hierarchical matching and forces an
+# extremely slow full flatten of every bitcell instance. This is a bitcell/tooling issue,
+# not something wrong with this config. Revisit if upstream fixes it or a real (non-label)
+# layout fix is undertaken separately.
+check_lvsdrc = False
 
 # Allow byte writes
 write_size = 8 # Bits

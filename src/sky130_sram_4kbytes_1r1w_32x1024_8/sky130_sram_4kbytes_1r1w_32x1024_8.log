@@ -1,42 +1,162 @@
-[2026-08-24 06:47:52.470542] WARNING: file globals.py: line 168: Failed to find coverage installation. This can be installed with pip3 install coverage
-
-[2026-08-24 06:47:54.107069] |==============================================================================|
-[2026-08-24 06:47:54.107526] |=========                      OpenRAM v1.2.49                       =========|
-[2026-08-24 06:47:54.107564] |=========                                                            =========|
-[2026-08-24 06:47:54.107582] |=========               VLSI Design and Automation Lab               =========|
-[2026-08-24 06:47:54.107595] |=========        Computer Science and Engineering Department         =========|
-[2026-08-24 06:47:54.107606] |=========            University of California Santa Cruz             =========|
-[2026-08-24 06:47:54.107616] |=========                                                            =========|
-[2026-08-24 06:47:54.107627] |=========          Usage help: openram-user-group@ucsc.edu           =========|
-[2026-08-24 06:47:54.107637] |=========        Development help: openram-dev-group@ucsc.edu        =========|
-[2026-08-24 06:47:54.107646] |=========                See LICENSE for license info                =========|
-[2026-08-24 06:47:54.107655] |==============================================================================|
-[2026-08-24 06:47:54.107670] ** Start: 08/24/2026 06:47:54
-[2026-08-24 06:47:54.107688] Technology: sky130
-[2026-08-24 06:47:54.107700] Total size: 32768 bits
-[2026-08-24 06:47:54.107711] Word size: 32
+[2026-08-26 13:03:51.443329] [openram.globals/init_openram]: Initializing OpenRAM...
+[2026-08-26 13:03:51.443505] [openram.globals/setup_paths]: OpenRAM source code found in /home/juiceboy/OpenRAM/compiler
+[2026-08-26 13:03:51.443640] [openram.globals/setup_paths]: Temporary files saved in /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/tmp/
+[2026-08-26 13:03:51.443879] [openram.globals/read_config]: Configuration file is /home/juiceboy/FFT-Accelerator/src/mem/sram_config.py
+[2026-08-26 13:03:51.445259] [openram.globals/read_config]: Output saved in /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/
+[2026-08-26 13:03:51.445634] [openram.globals/install_nix]: Bootstrapping toolchain with Nix...
+[2026-08-26 13:03:53.432093] [openram.globals/import_tech]: Tech directory found in /home/juiceboy/OpenRAM/technology:/home/juiceboy/OpenRAM/compiler/../technology
+[2026-08-26 13:03:53.432593] [openram.globals/import_tech]: Adding technology path: /home/juiceboy/OpenRAM/technology
+[2026-08-26 13:03:53.433039] [openram.globals/import_tech]: Adding technology path: /home/juiceboy/OpenRAM/compiler/../technology
+[2026-08-26 13:03:53.439418] [openram.globals/purge_temp]: Purging temp directory: /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/tmp/
+[2026-08-26 13:03:53.596322] [openram.globals/setup_bitcell]: Using bitcell: bitcell_2port
+[2026-08-26 13:03:54.842254] [openram.characterizer/<module>]: Initializing characterizer...
+[2026-08-26 13:03:54.850964] [openram.characterizer/<module>]: Analytical model enabled.
+[2026-08-26 13:03:54.860277] [openram.verify/<module>]: Initializing verify...
+[2026-08-26 13:03:54.868873] [openram.verify/<module>]: LVS/DRC/PEX disabled.
+[2026-08-26 13:03:54.872016] [openram.globals/setup_bitcell]: Using bitcell: bitcell_2port
+[2026-08-26 13:03:54.872091] |==============================================================================|
+[2026-08-26 13:03:54.872132] |=========                      OpenRAM v1.2.49                       =========|
+[2026-08-26 13:03:54.872160] |=========                                                            =========|
+[2026-08-26 13:03:54.872183] |=========               VLSI Design and Automation Lab               =========|
+[2026-08-26 13:03:54.872209] |=========        Computer Science and Engineering Department         =========|
+[2026-08-26 13:03:54.872230] |=========            University of California Santa Cruz             =========|
+[2026-08-26 13:03:54.872254] |=========                                                            =========|
+[2026-08-26 13:03:54.872275] |=========          Usage help: openram-user-group@ucsc.edu           =========|
+[2026-08-26 13:03:54.872295] |=========        Development help: openram-dev-group@ucsc.edu        =========|
+[2026-08-26 13:03:54.872316] |=========                See LICENSE for license info                =========|
+[2026-08-26 13:03:54.872337] |==============================================================================|
+[2026-08-26 13:03:54.872509] ** Start: 08/26/2026 13:03:54
+[2026-08-26 13:03:54.872729] Technology: sky130
+[2026-08-26 13:03:54.873137] Total size: 32768 bits
+[2026-08-26 13:03:54.873301] Word size: 32
 Words: 1024
 Banks: 1
-[2026-08-24 06:47:54.107722] Write size: 8
-[2026-08-24 06:47:54.107733] RW ports: 0
+[2026-08-26 13:03:54.873350] Write size: 8
+[2026-08-26 13:03:54.873380] RW ports: 0
 R-only ports: 1
 W-only ports: 1
-[2026-08-24 06:47:54.107743] DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
-[2026-08-24 06:47:54.107753] Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
-[2026-08-24 06:47:54.107765] Only generating nominal corner timing.
-[2026-08-24 06:47:54.107776] Words per row: None
-[2026-08-24 06:47:54.107815] Output files are: 
-[2026-08-24 06:47:54.107829] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lvs
-[2026-08-24 06:47:54.107839] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.sp
-[2026-08-24 06:47:54.107851] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.v
-[2026-08-24 06:47:54.107860] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lib
-[2026-08-24 06:47:54.107870] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.py
-[2026-08-24 06:47:54.107879] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.html
-[2026-08-24 06:47:54.107887] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.log
-[2026-08-24 06:47:54.107896] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lef
-[2026-08-24 06:47:54.107904] /workspace/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.gds
-[2026-08-24 06:50:27.114427] ** Submodules: 153.0 seconds
-[2026-08-24 06:50:27.131768] ** Placement: 0.0 seconds
-[2026-08-24 07:30:11.894439] ** Routing: 2384.8 seconds
-[2026-08-24 09:23:12.557346] WARNING: file magic.py: line 254: DRC Errors sky130_sram_4kbytes_1r1w_32x1024_8	3
+[2026-08-26 13:03:54.873412] DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+[2026-08-26 13:03:54.873437] DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+[2026-08-26 13:03:54.873463] Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+[2026-08-26 13:03:54.873488] Only generating nominal corner timing.
+[2026-08-26 13:03:54.873518] Words per row: None
+[2026-08-26 13:03:54.873575] Output files are: 
+[2026-08-26 13:03:54.874062] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lvs
+[2026-08-26 13:03:54.874670] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.sp
+[2026-08-26 13:03:54.874989] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.v
+[2026-08-26 13:03:54.875163] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lib
+[2026-08-26 13:03:54.875442] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.py
+[2026-08-26 13:03:54.875568] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.html
+[2026-08-26 13:03:54.875674] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.log
+[2026-08-26 13:03:54.875855] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lef
+[2026-08-26 13:03:54.876035] /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.gds
+[2026-08-26 13:03:54.898633] [openram.sram_config/recompute_sizes]: Recomputing with words per row: 4
+[2026-08-26 13:03:54.898956] [openram.sram_config/recompute_sizes]: Rows: 256 Cols: 128
+[2026-08-26 13:03:54.899324] [openram.sram_config/recompute_sizes]: Row addr size: 8 Col addr size: 2 Bank addr size: 10
+[2026-08-26 13:03:54.899562] [openram.sram_config/compute_sizes]: Set SRAM Words Per Row=4
+[2026-08-26 13:03:54.916344] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_capped_replica_bitcell_array 256 x 128
+[2026-08-26 13:03:54.918133] [openram.modules.capped_replica_bitcell_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_capped_replica_bitcell_array 256 x 128 rbls: [1, 1] left_rbl: [0] right_rbl: [1]
+[2026-08-26 13:03:54.919600] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_replica_bitcell_array 256 x 128
+[2026-08-26 13:03:54.920364] [openram.modules.replica_bitcell_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_replica_bitcell_array 256 x 128 rbls: [1, 1] left_rbl: [0] right_rbl: [1]
+[2026-08-26 13:03:54.922093] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_bitcell_array 256 x 128
+[2026-08-26 13:03:54.922789] [openram.modules.bitcell_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_bitcell_array 256 x 128
+[2026-08-26 13:10:00.202796] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_replica_column 258 x 1
+[2026-08-26 13:10:00.379519] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_replica_column_0 258 x 1
+[2026-08-26 13:10:00.483418] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_dummy_array 1 x 128
+[2026-08-26 13:10:06.465309] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_col_cap_array 1 x 130
+[2026-08-26 13:10:06.522674] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_col_cap_array_0 1 x 130
+[2026-08-26 13:10:06.595849] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_row_cap_array 258 x 1
+[2026-08-26 13:10:06.695076] [openram.modules.bitcell_base_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_row_cap_array_0 258 x 1
+[2026-08-26 13:10:07.118412] [openram.modules.and2_dec/__init__]: Creating and2_dec and2_dec
+[2026-08-26 13:10:07.127383] [openram.modules.and3_dec/__init__]: Creating and3_dec and3_dec
+[2026-08-26 13:10:07.139906] [openram.modules.and4_dec/__init__]: Creating and4_dec and4_dec
+[2026-08-26 13:10:07.447741] [openram.modules.wordline_driver_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_wordline_driver_array
+[2026-08-26 13:10:07.448192] [openram.modules.wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[2026-08-26 13:10:07.673171] [openram.modules.and2_dec/__init__]: Creating and2_dec and2_dec_0
+[2026-08-26 13:10:07.794583] [openram.modules.precharge_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_precharge_array
+[2026-08-26 13:10:07.862500] [openram.modules.column_mux_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_column_mux_array
+[2026-08-26 13:10:08.021219] [openram.modules.write_driver_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_write_driver_array
+[2026-08-26 13:10:08.046140] [openram.modules.write_mask_and_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_write_mask_and_array
+[2026-08-26 13:10:08.048580] [openram.modules.pand2/__init__]: Creating pand2 pand2
+[2026-08-26 13:10:08.056475] [openram.modules.pdriver/__init__]: creating pdriver pdriver
+[2026-08-26 13:10:08.139596] [openram.modules.precharge_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_precharge_array_0
+[2026-08-26 13:10:08.727175] [openram.modules.sense_amp_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_sense_amp_array
+[2026-08-26 13:10:08.796275] [openram.modules.column_mux_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_column_mux_array_0
+[2026-08-26 13:10:09.161484] [openram.modules.pand2/__init__]: Creating pand2 pand2_0
+[2026-08-26 13:10:09.165296] [openram.modules.pdriver/__init__]: creating pdriver pdriver_0
+[2026-08-26 13:10:09.498756] [openram.modules.dff_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_row_addr_dff rows=8 cols=1
+[2026-08-26 13:10:09.510042] [openram.modules.dff_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_col_addr_dff rows=1 cols=2
+[2026-08-26 13:10:09.511446] [openram.modules.dff_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_data_dff rows=1 cols=32
+[2026-08-26 13:10:09.532029] [openram.modules.dff_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_wmask_dff rows=1 cols=4
+[2026-08-26 13:10:09.537950] [openram.modules.control_logic_base/__init__]: Creating control_logic_w
+[2026-08-26 13:10:09.539303] [openram.modules.dff_buf/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_dff_buf
+[2026-08-26 13:10:09.546768] [openram.modules.dff_buf_array/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_dff_buf_array
+[2026-08-26 13:10:09.547249] [openram.modules.dff_buf/__init__]: Creating sky130_sram_4kbytes_1r1w_32x1024_8_dff_buf_0
+[2026-08-26 13:10:09.549533] [openram.modules.pand2/__init__]: Creating pand2 pand2_1
+[2026-08-26 13:10:09.550068] [openram.modules.pdriver/__init__]: creating pdriver pdriver_1
+[2026-08-26 13:10:09.558716] [openram.modules.pbuf/__init__]: creating pbuf with size of 128
+[2026-08-26 13:10:09.604376] [openram.modules.pdriver/__init__]: creating pdriver pdriver_2
+[2026-08-26 13:10:09.641225] [openram.modules.pdriver/__init__]: creating pdriver pdriver_3
+[2026-08-26 13:10:09.675099] [openram.modules.pand3/__init__]: Creating pand3 pand3
+[2026-08-26 13:10:09.679998] [openram.modules.pdriver/__init__]: creating pdriver pdriver_4
+[2026-08-26 13:10:09.691898] [openram.modules.pand3/__init__]: Creating pand3 pand3_0
+[2026-08-26 13:10:09.693322] [openram.modules.pdriver/__init__]: creating pdriver pdriver_5
+[2026-08-26 13:10:09.699716] [openram.modules.pdriver/__init__]: creating pdriver pdriver_6
+[2026-08-26 13:10:09.718434] [openram.modules.delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+[2026-08-26 13:10:09.765471] [openram.modules.control_logic_base/__init__]: Creating control_logic_r
+[2026-08-26 13:10:09.784168] ** Submodules: 374.9 seconds
+[2026-08-26 13:10:09.819318] ** Placement: 0.0 seconds
+[2026-08-26 13:16:05.493586] [openram.base.hierarchy_layout/get_bbox]: Size: 685.3000000000001 x 646.23 with perimeter margin 0
+[2026-08-26 13:16:05.665556] [openram.router.router_tech/__init__]: Minimum track width: 0.680
+[2026-08-26 13:16:05.665827] [openram.router.router_tech/__init__]: Minimum track space: 0.300
+[2026-08-26 13:16:05.666051] [openram.router.router_tech/__init__]: Minimum track wire width: 0.380
+[2026-08-26 13:16:05.666245] [openram.router.signal_escape_router/route]: Running signal escape router...
+[2026-08-26 13:21:17.299684] [openram.router.router_tech/__init__]: Minimum track width: 0.680
+[2026-08-26 13:21:17.299970] [openram.router.router_tech/__init__]: Minimum track space: 0.300
+[2026-08-26 13:21:17.300154] [openram.router.router_tech/__init__]: Minimum track wire width: 0.380
+[2026-08-26 13:21:17.300344] [openram.router.supply_router/route]: Running router for vdd and gnd...
+[2026-08-26 13:59:38.095112] ** Routing: 2968.3 seconds
+[2026-08-26 13:59:38.184177] ** Verification: 0.0 seconds
+[2026-08-26 13:59:38.184423] ** SRAM creation: 3343.3 seconds
+[2026-08-26 13:59:38.184583] SP: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.sp
+[2026-08-26 13:59:38.817407] [openram.characterizer.functional/__init__]: Random seed for functional simulation: 1787767178815258253
+[2026-08-26 13:59:38.901127] ** Spice writing: 0.7 seconds
+[2026-08-26 13:59:38.901352] DELAY: Writing stimulus...
+[2026-08-26 13:59:46.298782] [openram.characterizer.delay/create_sen_and_bitline_path_measures]: self.bl_name = xsky130_sram_4kbytes_1r1w_32x1024_8.xbank0.bl_1_127
+[2026-08-26 13:59:46.305627] ** DELAY: 7.4 seconds
+[2026-08-26 13:59:46.918618] GDS: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.gds
+[2026-08-26 13:59:49.494509] ** GDS: 2.6 seconds
+[2026-08-26 13:59:49.494738] LEF: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lef
+[2026-08-26 13:59:49.515816] ** LEF: 0.0 seconds
+[2026-08-26 13:59:49.515942] LVS: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.lvs.sp
+[2026-08-26 13:59:50.114303] ** LVS writing: 0.6 seconds
+[2026-08-26 13:59:50.114553] LIB: Characterizing... 
+[2026-08-26 13:59:50.122478] [openram.characterizer.lib/prepare_tables]: Slews: [0.00125 0.005   0.04   ]
+[2026-08-26 13:59:50.125907] [openram.characterizer.lib/prepare_tables]: Loads: [ 1.7225  6.89   27.56  ]
+[2026-08-26 13:59:50.126728] [openram.characterizer.lib/prepare_tables]: self.load_slews : [(np.float64(1.7225), np.float64(0.00125)), (np.float64(6.89), np.float64(0.00125)), (np.float64(27.56), np.float64(0.00125)), (np.float64(1.7225), np.float64(0.005)), (np.float64(6.89), np.float64(0.005)), (np.float64(27.56), np.float64(0.005)), (np.float64(1.7225), np.float64(0.04)), (np.float64(6.89), np.float64(0.04)), (np.float64(27.56), np.float64(0.04))]
+[2026-08-26 13:59:50.127209] [openram.characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25)]
+[2026-08-26 13:59:50.127653] [openram.characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
+[2026-08-26 13:59:50.128288] [openram.characterizer.lib/characterize_corners]: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8_TT_1p8V_25C.lib
+[2026-08-26 13:59:50.129618] WARNING: file elmore.py: line 45: In analytical mode, all ports have the timing of the first read port.
 
+[2026-08-26 13:59:53.552011] [openram.characterizer.elmore/analytical_power]: Dynamic Power: 199852531225.45578 mW
+[2026-08-26 13:59:53.553087] [openram.characterizer.elmore/analytical_power]: Leakage Power: 0.035141 mW
+[2026-08-26 13:59:53.553576] [openram.characterizer.elmore/get_lib_values]: Slew, Load, Delay(ns), Slew(ns)
+[2026-08-26 13:59:53.554571] [openram.characterizer.elmore/get_lib_values]: 0.00125, 1.7225, 0.33544742159265367, 0.00167765625
+[2026-08-26 13:59:53.555327] [openram.characterizer.elmore/get_lib_values]: 0.00125, 6.89, 0.36451460909265365, 0.004584374999999999
+[2026-08-26 13:59:53.555960] [openram.characterizer.elmore/get_lib_values]: 0.00125, 27.56, 0.4807833590926536, 0.016211249999999996
+[2026-08-26 13:59:53.556655] [openram.characterizer.elmore/get_lib_values]: 0.005, 1.7225, 0.33544742159265367, 0.00167765625
+[2026-08-26 13:59:53.557368] [openram.characterizer.elmore/get_lib_values]: 0.005, 6.89, 0.36451460909265365, 0.004584374999999999
+[2026-08-26 13:59:53.557975] [openram.characterizer.elmore/get_lib_values]: 0.005, 27.56, 0.4807833590926536, 0.016211249999999996
+[2026-08-26 13:59:53.558624] [openram.characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.33544742159265367, 0.00167765625
+[2026-08-26 13:59:53.559326] [openram.characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.36451460909265365, 0.004584374999999999
+[2026-08-26 13:59:53.559935] [openram.characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.4807833590926536, 0.016211249999999996
+[2026-08-26 13:59:53.584645] ** Characterization: 3.5 seconds
+[2026-08-26 13:59:53.584938] Config: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.py
+[2026-08-26 13:59:53.584996] ** Config: 0.0 seconds
+[2026-08-26 13:59:53.590739] Datasheet: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.html
+[2026-08-26 13:59:53.592240] ** Datasheet: 0.0 seconds
+[2026-08-26 13:59:53.592306] Verilog: Writing to /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/sky130_sram_4kbytes_1r1w_32x1024_8.v
+[2026-08-26 13:59:53.592521] ** Verilog: 0.0 seconds
+[2026-08-26 13:59:53.594492] [openram.globals/cleanup_paths]: Preserving temp directory: /home/juiceboy/FFT-Accelerator/src/sky130_sram_4kbytes_1r1w_32x1024_8/tmp/
+[2026-08-26 13:59:53.594621] ** End: 3358.7 seconds

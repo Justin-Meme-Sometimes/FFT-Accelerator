@@ -6,15 +6,18 @@ module sram_buff (
     input logic read,
     input logic write,
     output logic [15:0] d_out,
+    output logic error,
 );
 
 logic read_new, write_newp;
-always_comb begin //to deal with contention
+always_comb begin  //to deal with contention
     read_new = read;
     write_new = write;
+    error = '0;
     if(read && write) begin
         read_new = 0;
         write_new = 0;
+        error = 1'd1;
     end
 end
 
